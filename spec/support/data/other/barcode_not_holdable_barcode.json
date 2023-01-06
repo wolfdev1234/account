@@ -1,0 +1,8 @@
+{
+  "messageList": [
+    {
+      "code": "hatErrorResponse.722",
+      "message": "User already has a hold on this material"
+    }
+  ]
+}

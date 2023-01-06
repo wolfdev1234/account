@@ -1,0 +1,45 @@
+<%= form_with url: renewals_batch_update_path, method: :patch, id: 'checkouts' do %>
+    <table id="checkouts-table" class="table table-responsive-sm" role="table" aria-live="polite">
+      <caption><h2>Checkouts</h2></caption>
+      <thead>
+      <tr>
+        <th scope="col">
+          <%= render SelectAllComponent.new target_keyword: 'renewal' %>
+        </th>
+        <th scope="col">Item</th>
+        <th scope="col">Times Renewed</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">You Owe</th>
+      </tr>
+      </thead>
+      <tfoot>
+      <tr>
+        <th scope="col" colspan="6">
+          <% unless Settings.maintenance_mode -%>
+            <%= submit_tag 'Renew',
+                           class: 'btn btn-primary deflatten',
+                           aria: { controls: 'checkouts-table' },
+                           data: { disable_with: 'Please wait...' } %>
+          <% end -%>
+        </th>
+      </tr>
+      </tfoot>
+      <tbody>
+      <% checkouts.each do |checkout| %>
+          <tr id="checkout<%= checkout.item_key %>">
+            <td>
+              <%= render SelectAllChildComponent.new key: checkout.item_key, target_keyword: 'renewal' %>
+            </td>
+            <td class="bibitem">
+              <%= render BibItemComponent.new bibitem: checkout %>
+            </td>
+            <td class="renewal_count"><span><%= checkout.renewal_count if checkout.renewal_count.positive? %></span></td>
+            <td class="due-date"><span><%= render partial: 'checkouts/due_date', locals: { checkout: checkout } %></span></td>
+            <td class="status"><span><%= checkout.status_human %></span></td>
+            <td><%= number_to_currency checkout.accrued if checkout.accrued.positive? %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+<% end %>

@@ -1,0 +1,8 @@
+<p>Volume(s) Selected -- if you need specific volume(s) (e.g., vol.1 and/or vol.2) check each desired volume </p>
+<% volumetric_calls.each do |call| %>
+  <%= check_box_tag 'barcodes[]', call.items.first.barcode, false, id: "barcodes_#{call.items.first.barcode}" %>
+
+  <%= label_tag "barcodes_#{call.items.first.barcode}",
+                "#{call.call_number} (#{call.items.first.item_type_human})" %>
+  <br>
+<% end %>

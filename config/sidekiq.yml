@@ -1,0 +1,4 @@
+production:
+  :concurrency: 13
+:queues:
+  - default

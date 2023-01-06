@@ -1,0 +1,19 @@
+<%= t('myaccount.checkouts_info_html') %>
+<% if checkouts.length.positive? %>
+    <p>
+      <div class="ml-4">Total Checked Out: <%= checkouts.length %></div>
+
+      <% count = checkouts.select(&:recalled?).length %>
+      <% if count.positive? %>
+          <div class="ml-4">Recalled: <%= count %></div>
+      <% end %>
+
+      <% count = checkouts.select(&:overdue?).length %>
+      <% if count.positive? %>
+          <div class="ml-4">Overdue: <%= count %></div>
+      <% end %>
+    </p>
+    <%= render partial: 'checkouts/checkouts_table', locals: { checkouts: checkouts } %>
+<% else %>
+    <p>You have no checkouts at this time.</p>
+<% end %>

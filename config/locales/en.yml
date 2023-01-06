@@ -1,0 +1,74 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  user_util_links:
+    update_address: 'Update your address and other information at accounts.psu.edu'
+    borrowing: 'Borrowing privileges: information about loan periods, check out limits, and more'
+    questions: 'Frequently asked questions: borrowing and renewing'
+    user_privacy: 'Information about library user privacy'
+    feedback: 'Questions? Feedback? Need to report a problem?'
+  time:
+    formats:
+      short: '%B %-d, %Y'
+      long: '%B %e, %Y %l:%M%P'
+      time_today: 'Today at %-l:%M%P'
+      time_only: '%-l:%M%P'
+  myaccount:
+    callout:
+      label_html: <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Notice
+      message: Returned materials may be quarantined for four days and will remain on your account during the quarantine period.
+    checkouts_info_html: >
+      <p>Materials borrowed through <a href="https://psu-illiad-oclc-org.ezaccess.libraries.psu.edu/illiad/upm/illiad.dll">Illiad</a> or <a href="http://www.libraries.psu.edu/mtss">MTSS</a> do not appear on this list and must be renewed separately.</p>
+      <p>If you are finished with any items, please consider returning them to any Penn State library.</p>
+    holds_info_html: Materials requested through <a href="https://psu-illiad-oclc-org.ezaccess.libraries.psu.edu/illiad/upm/illiad.dll">Illiad</a> or <a href="http://www.libraries.psu.edu/mtss">MTSS</a> do not appear on this list and must be managed separately.
+    hold:
+      cancel:
+        success_html: <span class="font-weight-bold">Success!</span> %{bib_summary} was canceled.<br>
+        error_html: <span class="font-weight-bold">Sorry!</span> Something went wrong and "%{bib_summary}" was not canceled. Contact your campus library if you need assistance.<br>
+      update_not_needed_after:
+        success_html: <span class="font-weight-bold">Success!</span> "%{bib_summary}" not needed after date was updated.<br>
+        error_html: <span class="font-weight-bold">Sorry!</span> Something went wrong and "%{bib_summary}" not needed after date was not updated. Contact your campus library if you need assistance.<br>
+      update_pickup:
+        past_date: You specified a "Not needed after" date that is in the past. "Not needed after" date must be in the future.
+        pickup_choose_text: Please choose a pickup location
+        success_html: <span class="font-weight-bold">Success!</span> "%{bib_summary}" pickup location was updated.<br>
+        error_html: <span class="font-weight-bold">Sorry!</span> Something went wrong and "%{bib_summary}" pickup location was not updated. Contact your campus library if you need assistance.<br>
+      place_hold:
+        select_library: To place a hold, please choose a pickup location.
+        select_date: To place a hold, please choose a not needed after date.
+        select_volumes: To place a hold, please select a volume.
+        success_html: For placed hold(s), you will receive a library notice once items are available for pick up. Items generally arrive within 2-3 weekdays.
+        error_html: We could not process your request. Please visit our website for more information under <a href="https://libraries.psu.edu/services/borrow-renew#QuestionsReLibraryAcct">"Why did my hold fail?"</a>
+      new_hold:
+        catkey_missing: There was a problem processing your hold request, please contact your library if you need assistance.
+        error_html: <strong>Sorry!</strong> You cannot place a hold on this item. Contact your library if you need assistance.<br>
+    loading_html: Items are loading. Longer lists of items will take a few moments to load.

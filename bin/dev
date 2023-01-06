@@ -1,0 +1,4 @@
+#!/bin/bash
+# silly script to start up a development environment of myaccount
+
+docker-compose up --build -d

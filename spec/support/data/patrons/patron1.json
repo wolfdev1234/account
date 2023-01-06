@@ -1,0 +1,898 @@
+{
+  "resource": "/user/patron",
+  "key": "patron1",
+  "fields": {
+    "lastName": "LASTNAME",
+    "holdRecordList": [
+      {
+        "resource": "/circulation/holdRecord",
+        "key": "3906718",
+        "fields": {
+          "pickupLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "6971573:2:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2014-03-07T21:32:00-05:00",
+              "circulate": true,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "ONHOLD-AA"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "6971573:2",
+                "fields": {
+                  "sortCallNumber": "PS 000201 .D688  2011",
+                  "dispCallNumber": "PS201.D688 2011"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2011-03-28",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATTEE-3"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "6971573",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Dowling, David Oakey, 1967-",
+                  "title": "The business of literary circles in nineteenth-century America"
+                }
+              },
+              "barcode": "000069304712"
+            }
+          },
+          "patron": {
+            "resource": "/user/patron",
+            "key": "104889"
+          },
+          "queueLength": 1,
+          "queuePosition": 1,
+          "selectedItem": {
+            "resource": "/catalog/item",
+            "key": "6971573:2:1"
+          },
+          "inactiveReason": null,
+          "fillByDate": "2020-02-07",
+          "inactiveDate": null,
+          "placedLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "suspendEndDate": null,
+          "beingHeldDate": "2019-12-16",
+          "holdRange": {
+            "resource": "/policy/holdRange",
+            "key": "SYSTEM"
+          },
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6971573",
+            "fields": {
+              "author": "Dowling, David Oakey, 1967-",
+              "title": "The business of literary circles in nineteenth-century America",
+              "callList": [
+                {
+                  "resource": "/catalog/call",
+                  "key": "6971573:2",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "UP-PAT"
+                    },
+                    "callNumber": "PS201.D688 2011",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "PS201.D688 2011",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "6971573"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "comment": "",
+          "holdType": "TITLE",
+          "placedDate": "2019-12-09",
+          "suspendBeginDate": null,
+          "expirationDate": null,
+          "status": "BEING_HELD"
+        }
+      },
+      {
+        "resource": "/circulation/holdRecord",
+        "key": "3911148",
+        "fields": {
+          "pickupLibrary": {
+            "resource": "/policy/library",
+            "key": "DUBOIS"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "19176154:1:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2017-01-09T11:11:00-05:00",
+              "circulate": false,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "CHECKEDOUT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "19176154:1",
+                "fields": {
+                  "sortCallNumber": "E  000444 .N43  2017",
+                  "dispCallNumber": "E444.N43 2017"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2017-01-09",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATTEE-1A"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "19176154",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Neary, Janet, author.",
+                  "title": "Fugitive Testimony : On the Visual Logic of Slave Narratives"
+                }
+              },
+              "barcode": "000072693346"
+            }
+          },
+          "patron": {
+            "resource": "/user/patron",
+            "key": "104889"
+          },
+          "queueLength": 1,
+          "queuePosition": 1,
+          "selectedItem": {
+            "resource": "/catalog/item",
+            "key": "19176154:1:1"
+          },
+          "inactiveReason": null,
+          "fillByDate": "2020-06-19",
+          "inactiveDate": null,
+          "placedLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "suspendEndDate": null,
+          "beingHeldDate": null,
+          "holdRange": {
+            "resource": "/policy/holdRange",
+            "key": "SYSTEM"
+          },
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "19176154",
+            "fields": {
+              "author": "Neary, Janet, author.",
+              "title": "Fugitive Testimony : On the Visual Logic of Slave Narratives",
+              "callList": [
+                {
+                  "resource": "/catalog/call",
+                  "key": "19176154:1",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "UP-PAT"
+                    },
+                    "callNumber": "E444.N43 2017",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E444.N43 2017",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "19176154"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "comment": "",
+          "holdType": "TITLE",
+          "placedDate": "2019-12-29",
+          "suspendBeginDate": null,
+          "expirationDate": null,
+          "status": "PLACED"
+        }
+      },
+      {
+        "resource": "/circulation/holdRecord",
+        "key": "3911149",
+        "fields": {
+          "pickupLibrary": {
+            "resource": "/policy/library",
+            "key": "DUBOIS"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "22101327:2:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2018-02-21T13:13:00-05:00",
+              "circulate": true,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "INTRANSIT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "22101327:2",
+                "fields": {
+                  "sortCallNumber": "E  000185.86 .F676  2017",
+                  "dispCallNumber": "E185.86.F676 2017"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2018-01-16",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATTEE-1A"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "22101327",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Fox, Regis M., author.",
+                  "title": "Resistance reimagined : black women's critical thought as survival"
+                }
+              },
+              "barcode": "000079664585"
+            }
+          },
+          "patron": {
+            "resource": "/user/patron",
+            "key": "104889"
+          },
+          "queueLength": 1,
+          "queuePosition": 1,
+          "selectedItem": {
+            "resource": "/catalog/item",
+            "key": "22101327:2:1"
+          },
+          "inactiveReason": null,
+          "fillByDate": "2021-02-27",
+          "inactiveDate": null,
+          "placedLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "suspendEndDate": null,
+          "beingHeldDate": null,
+          "holdRange": {
+            "resource": "/policy/holdRange",
+            "key": "SYSTEM"
+          },
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "22101327",
+            "fields": {
+              "author": "Fox, Regis M., author.",
+              "title": "Resistance reimagined : black women's critical thought as survival",
+              "callList": [
+                {
+                  "resource": "/catalog/call",
+                  "key": "22101327:2",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "UP-PAT"
+                    },
+                    "callNumber": "E185.86.F676 2017",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E185.86.F676 2017",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "22101327"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "comment": "",
+          "holdType": "TITLE",
+          "placedDate": "2019-12-29",
+          "suspendBeginDate": null,
+          "expirationDate": null,
+          "status": "PLACED"
+        }
+      },
+      {
+        "resource": "/circulation/holdRecord",
+        "key": "3911307",
+        "fields": {
+          "pickupLibrary": {
+            "resource": "/policy/library",
+            "key": "DUBOIS"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "2358195:2:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2016-06-24T10:35:00-04:00",
+              "circulate": true,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "INTRANSIT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "2358195:2",
+                "fields": {
+                  "sortCallNumber": "E  000540 .N3W72  2002",
+                  "dispCallNumber": "E540.N3W72 2002"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2003-01-06",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATTEE-1A"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "2358195",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Wilson, Keith P., 1944-",
+                  "title": "Campfires of freedom : the camp life of Black soldiers during the Civil War"
+                }
+              },
+              "barcode": "000049566741"
+            }
+          },
+          "patron": {
+            "resource": "/user/patron",
+            "key": "104889"
+          },
+          "queueLength": 1,
+          "queuePosition": 1,
+          "selectedItem": {
+            "resource": "/catalog/item",
+            "key": "2358195:2:1"
+          },
+          "inactiveReason": null,
+          "fillByDate": "2021-02-28",
+          "inactiveDate": null,
+          "placedLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "suspendEndDate": null,
+          "beingHeldDate": null,
+          "holdRange": {
+            "resource": "/policy/holdRange",
+            "key": "SYSTEM"
+          },
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "2358195",
+            "fields": {
+              "author": "Wilson, Keith P., 1944-",
+              "title": "Campfires of freedom : the camp life of Black soldiers during the Civil War",
+              "callList": [
+                {
+                  "resource": "/catalog/call",
+                  "key": "2358195:6",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "ABINGTON"
+                    },
+                    "callNumber": "E540.N3W72 2002",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E540.N3W72 2002",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2358195"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                },
+                {
+                  "resource": "/catalog/call",
+                  "key": "2358195:5",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "BERKS"
+                    },
+                    "callNumber": "E540.N3.W72 2002",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E540.N3.W72 2002",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2358195"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                },
+                {
+                  "resource": "/catalog/call",
+                  "key": "2358195:4",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "HAZLETON"
+                    },
+                    "callNumber": "E540.N3.W72 2002",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E540.N3.W72 2002",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2358195"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                },
+                {
+                  "resource": "/catalog/call",
+                  "key": "2358195:2",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "UP-PAT"
+                    },
+                    "callNumber": "E540.N3W72 2002",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "E540.N3W72 2002",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2358195"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "comment": "",
+          "holdType": "TITLE",
+          "placedDate": "2019-12-30",
+          "suspendBeginDate": null,
+          "expirationDate": null,
+          "status": "PLACED"
+        }
+      },
+      {
+        "resource": "/circulation/holdRecord",
+        "key": "3911308",
+        "fields": {
+          "pickupLibrary": {
+            "resource": "/policy/library",
+            "key": "DUBOIS"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "2051626:1:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2014-03-07T21:32:00-05:00",
+              "circulate": true,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "INTRANSIT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "2051626:1",
+                "fields": {
+                  "sortCallNumber": "ML 003556 .C78  1999",
+                  "dispCallNumber": "ML3556.C78 1999"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2001-04-14",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATTEE-1A"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "2051626",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Cruz, Jon.",
+                  "title": "Culture on the margins : the Black spiritual and the rise of American cultural interpretation"
+                }
+              },
+              "barcode": "000044027193"
+            }
+          },
+          "patron": {
+            "resource": "/user/patron",
+            "key": "104889"
+          },
+          "queueLength": 1,
+          "queuePosition": 1,
+          "selectedItem": {
+            "resource": "/catalog/item",
+            "key": "2051626:1:1"
+          },
+          "inactiveReason": null,
+          "fillByDate": "2021-02-28",
+          "inactiveDate": null,
+          "placedLibrary": {
+            "resource": "/policy/library",
+            "key": "ALTOONA"
+          },
+          "suspendEndDate": null,
+          "beingHeldDate": null,
+          "holdRange": {
+            "resource": "/policy/holdRange",
+            "key": "SYSTEM"
+          },
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "2051626",
+            "fields": {
+              "author": "Cruz, Jon.",
+              "title": "Culture on the margins : the Black spiritual and the rise of American cultural interpretation",
+              "callList": [
+                {
+                  "resource": "/catalog/call",
+                  "key": "2051626:2",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "HARRISBURG"
+                    },
+                    "callNumber": "ML3556.C78 1999",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "ML3556.C78 1999",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2051626"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                },
+                {
+                  "resource": "/catalog/call",
+                  "key": "2051626:1",
+                  "fields": {
+                    "library": {
+                      "resource": "/policy/library",
+                      "key": "UP-PAT"
+                    },
+                    "callNumber": "ML3556.C78 1999",
+                    "shadowed": false,
+                    "volumetric": null,
+                    "dispCallNumber": "ML3556.C78 1999",
+                    "bib": {
+                      "resource": "/catalog/bib",
+                      "key": "2051626"
+                    },
+                    "classification": {
+                      "resource": "/policy/classification",
+                      "key": "LC"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "comment": "",
+          "holdType": "TITLE",
+          "placedDate": "2019-12-30",
+          "suspendBeginDate": null,
+          "expirationDate": null,
+          "status": "PLACED"
+        }
+      }
+    ],
+    "privilegeExpiresDate": null,
+    "displayName": "LASTNAME, FIRSTNAME",
+    "profile": {
+      "resource": "/policy/userProfile",
+      "key": "FACULTY"
+    },
+    "groupId": "",
+    "suffix": "",
+    "title": "",
+    "claimsReturnedCount": 0,
+    "alternateID": "ZZZ55555",
+    "address1": [
+      {
+        "resource": "/user/patron/address1",
+        "key": "40",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "DAYPHONE"
+          },
+          "data": null
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "41",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "PHONE"
+          },
+          "data": null
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "39",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "EMAIL"
+          },
+          "data": "zzz123@psu.edu"
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "42",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "SENDEMAIL"
+          },
+          "data": null
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "43",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "BADEMAIL"
+          },
+          "data": null
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "4",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "STREET1"
+          },
+          "data": "123 Fake Street"
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "22",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "ZIP"
+          },
+          "data": "00000"
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "44",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "STREET2"
+          },
+          "data": null
+        }
+      },
+      {
+        "resource": "/user/patron/address1",
+        "key": "37",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronAddress1",
+            "key": "CITY/STATE"
+          },
+          "data": "Jersey Shore, KY"
+        }
+      }
+    ],
+    "firstName": "FIRSTNAME",
+    "standing": {
+      "resource": "/policy/patronStanding",
+      "key": "OK"
+    },
+    "library": {
+      "resource": "/policy/library",
+      "key": "ALTOONA"
+    },
+    "usePreferredName": false,
+    "keepCircHistory": "CIRCRULE",
+    "middleName": "H",
+    "preferredName": "",
+    "department": "",
+    "barcode": "999982273",
+    "customInformation": [
+      {
+        "resource": "/user/patron/customInformation",
+        "key": "1",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronExtendedInformation",
+            "key": "PSUACCOUNT"
+          },
+          "data": "20050801"
+        }
+      },
+      {
+        "resource": "/user/patron/customInformation",
+        "key": "19",
+        "fields": {
+          "code": {
+            "resource": "/policy/patronExtendedInformation",
+            "key": "GARNISH-DT"
+          },
+          "data": "00000000"
+        }
+      }
+    ]
+  }
+}

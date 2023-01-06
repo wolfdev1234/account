@@ -1,0 +1,122 @@
+{
+  "resource": "/circulation/holdRecord",
+  "key": "3912343",
+  "fields": {
+    "pickupLibrary": {
+      "resource": "/policy/library",
+      "key": "HERSHEY"
+    },
+    "item": {
+      "resource": "/catalog/item",
+      "key": "26474837:2:1",
+      "fields": {
+        "itemCategory4": null,
+        "itemCategory3": null,
+        "itemCategory2": null,
+        "itemType": {
+          "resource": "/policy/itemType",
+          "key": "BOOK"
+        },
+        "itemCategory1": null,
+        "itemCategory5": null,
+        "systemModifiedDate": "2019-04-10T12:07:00-04:00",
+        "circulate": true,
+        "currentLocation": {
+          "resource": "/policy/location",
+          "key": "STACKS-AC"
+        },
+        "call": {
+          "resource": "/catalog/call",
+          "key": "26474837:2",
+          "fields": {
+            "library": {
+              "resource": "/policy/library",
+              "key": "UP-ARCHIT"
+            },
+            "callNumber": "NA705.U775 2020",
+            "shadowed": false,
+            "volumetric": null,
+            "sortCallNumber": "NA 000705 .U775  2020",
+            "dispCallNumber": "NA705.U775 2020",
+            "bib": {
+              "resource": "/catalog/bib",
+              "key": "26474837"
+            },
+            "classification": {
+              "resource": "/policy/classification",
+              "key": "LC"
+            },
+            "systemModifiedDate": "2019-04-10T12:07:00-04:00"
+          }
+        },
+        "mediaDesk": null,
+        "pieces": 1,
+        "createdDate": "2019-04-01",
+        "library": {
+          "resource": "/policy/library",
+          "key": "UP-ARCHIT"
+        },
+        "shadowed": false,
+        "permanent": true,
+        "price": {
+          "currencyCode": "USD",
+          "amount": "0.00"
+        },
+        "homeLocation": {
+          "resource": "/policy/location",
+          "key": "STACKS-AC"
+        },
+        "copyNumber": 1,
+        "timesInventoried": 0,
+        "lastInvDate": null,
+        "bib": {
+          "resource": "/catalog/bib",
+          "key": "26474837",
+          "fields": {
+            "shadowed": false,
+            "author": "Upton, Dell, author.",
+            "title": "American architecture : a thematic history"
+          }
+        },
+        "barcode": "000080951629"
+      }
+    },
+    "patron": {
+      "resource": "/user/patron",
+      "key": "837363"
+    },
+    "queueLength": 1,
+    "reserveHold": false,
+    "queuePosition": 1,
+    "selectedItem": {
+      "resource": "/catalog/item",
+      "key": "26474837:2:1"
+    },
+    "inactiveReason": null,
+    "placedWithOverride": false,
+    "alternateHoldID": "",
+    "fillByDate": "2020-08-04",
+    "noticeDate": null,
+    "inactiveDate": null,
+    "placedLibrary": {
+      "resource": "/policy/library",
+      "key": "UP-PAT"
+    },
+    "suspendEndDate": null,
+    "beingHeldDate": null,
+    "holdRange": {
+      "resource": "/policy/holdRange",
+      "key": "SYSTEM"
+    },
+    "bib": {
+      "resource": "/catalog/bib",
+      "key": "26474837"
+    },
+    "comment": "",
+    "holdType": "TITLE",
+    "placedDate": "2020-07-15",
+    "suspendBeginDate": null,
+    "expirationDate": null,
+    "status": "PLACED"
+  }
+}

@@ -1,0 +1,40 @@
+<% if place_hold_results[:error].present? %>
+    <div class="card bg-transparent my-3">
+      <div class="card-header bg-transparent">
+        <h3><%= pluralize place_hold_results[:error].length, 'Hold' %> Failed</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <% place_hold_results[:error].each do |result| %>
+            <%= render PlaceHoldErrorComponent.new result: result %>
+        <% end %>
+      </ul>
+      <div class="card-footer bg-transparent">
+        <p class="text-secondary"><%= t('myaccount.hold.place_hold.error_html') %></p>
+      </div>
+    </div>
+<% end %>
+
+<br>
+
+<% if place_hold_results[:success].present? %>
+    <div class="card bg-transparent my-3">
+      <div class="card-header bg-transparent">
+        <h3> <%= pluralize place_hold_results[:success].length, 'Hold' %> Placed </h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <% place_hold_results[:success].each do |result| %>
+            <%= render PlaceHoldSuccessComponent.new result: result %>
+        <% end %>
+      </ul>
+      <div class="card-footer bg-transparent">
+        <p class="text-secondary"><%= t('myaccount.hold.place_hold.success_html') %></p>
+      </div>
+    </div>
+<% end %>
+
+<br>
+
+<%= link_to 'Back to Catalog',
+            "https://catalog.libraries.psu.edu/catalog/#{place_hold_catkey}",
+            class: 'btn btn-info' %>
+<%= link_to 'See all Holds', holds_path, class: 'btn btn-info' %>

@@ -1,0 +1,50 @@
+@import 'theme';
+@import '~bootstrap';
+@import 'mixins';
+
+// scss-lint:disable PlaceholderInExtend
+
+.navbar-brand {
+  padding-left: 0;
+  padding-right: 0;
+
+  a {
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: middle;
+
+    img {
+      max-height: 50px;
+    }
+  }
+}
+
+.site-title {
+  border-left: 1px solid $white;
+  color: $white;
+  font-family: $headings-font-family;
+  font-size: 25px;
+  margin-left: 10px;
+  padding-left: 1rem;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.nav-link {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    @include font-size($font-size-base);
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .active-nav-link {
+    @include white-on-gray;
+  }
+}
+

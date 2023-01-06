@@ -1,0 +1,105 @@
+{
+  "resource": "/circulation/holdRecord",
+  "key": "3912325",
+  "fields": {
+    "pickupLibrary": {
+      "resource": "/policy/library",
+      "key": "FAYETTE"
+    },
+    "item": {
+      "resource": "/catalog/item",
+      "key": "476022:46:1",
+      "fields": {
+        "itemCategory4": null,
+        "itemCategory3": null,
+        "itemCategory2": null,
+        "itemType": {
+          "resource": "/policy/itemType",
+          "key": "PERIODICAL"
+        },
+        "itemCategory1": null,
+        "itemCategory5": null,
+        "systemModifiedDate": "2014-03-07T21:32:00-05:00",
+        "circulate": true,
+        "currentLocation": {
+          "resource": "/policy/location",
+          "key": "PATTEE-B"
+        },
+        "call": {
+          "resource": "/catalog/call",
+          "key": "476022:46"
+        },
+        "mediaDesk": null,
+        "pieces": 1,
+        "createdDate": "2002-10-24",
+        "library": {
+          "resource": "/policy/library",
+          "key": "UP-PAT"
+        },
+        "shadowed": false,
+        "permanent": true,
+        "price": {
+          "currencyCode": "USD",
+          "amount": "0.00"
+        },
+        "homeLocation": {
+          "resource": "/policy/location",
+          "key": "PATTEE-B"
+        },
+        "copyNumber": 1,
+        "timesInventoried": 0,
+        "lastInvDate": null,
+        "bib": {
+          "resource": "/catalog/bib",
+          "key": "476022",
+          "fields": {
+            "shadowed": false,
+            "author": "",
+            "title": "National review"
+          }
+        },
+        "barcode": "000048423854"
+      }
+    },
+    "patron": {
+      "resource": "/user/patron",
+      "key": "837363"
+    },
+    "queueLength": 106,
+    "reserveHold": false,
+    "queuePosition": 1,
+    "selectedItem": {
+      "resource": "/catalog/item",
+      "key": "476022:46:1"
+    },
+    "inactiveReason": {
+      "resource": "/policy/holdInactiveReason",
+      "key": "CANCELLED"
+    },
+    "placedWithOverride": false,
+    "alternateHoldID": "",
+    "fillByDate": "2020-07-08",
+    "noticeDate": null,
+    "inactiveDate": "2020-06-30",
+    "placedLibrary": {
+      "resource": "/policy/library",
+      "key": "UP-PAT"
+    },
+    "suspendEndDate": null,
+    "beingHeldDate": null,
+    "holdRange": {
+      "resource": "/policy/holdRange",
+      "key": "SYSTEM"
+    },
+    "bib": {
+      "resource": "/catalog/bib",
+      "key": "476022"
+    },
+    "comment": "",
+    "holdType": "TITLE",
+    "placedDate": "2020-05-01",
+    "suspendBeginDate": null,
+    "expirationDate": null,
+    "status": "CANCELLED"
+  }
+}

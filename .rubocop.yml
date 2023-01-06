@@ -1,0 +1,54 @@
+inherit_gem:
+  niftany: niftany_rubocop.yml
+
+inherit_from:
+  - .rubocop_todo.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7.6
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'spec/support/data/**/*'
+
+Metrics/ClassLength:
+  Exclude:
+  - 'app/services/symphony_client.rb'
+
+Metrics/BlockLength:
+  Exclude:
+  - 'config/environments/production.rb'
+  - 'config/initializers/warden.rb'
+  - 'spec/**/*'
+
+Layout/LineLength:
+  Exclude:
+  - 'spec/factories/bibs.rb'
+
+Naming/AccessorMethodName:
+  Exclude:
+    - 'app/services/symphony_client.rb'
+
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/services/symphony_client_spec.rb'
+    - 'spec/features/**/*'
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - 'spec/services/symphony_client_spec.rb'
+
+RSpec/VerifiedDoubles:
+  Exclude:
+    - 'spec/controllers/lending_policy_controller_spec.rb'
+
+RSpec/NestedGroups:
+  Exclude:
+    - 'spec/controllers/lending_policy_controller_spec.rb'    
+Lint/MissingSuper:
+  Exclude:
+    - 'app/components/**/*'

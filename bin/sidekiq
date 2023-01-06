@@ -1,0 +1,14 @@
+#!/bin/bash
+bundle config set path 'vendor/bundle'
+if [ ${RAILS_ENV:-development} == "development" ]; then 
+  bundle
+fi
+
+if [ -f /vault/secrets/config ]; then
+   echo "found vault config. sourcing"
+   . /vault/secrets/config
+fi
+
+rm -f tmp/pids/server.pid
+
+bundle exec sidekiq

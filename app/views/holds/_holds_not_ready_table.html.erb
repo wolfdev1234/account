@@ -1,0 +1,63 @@
+<%= form_with url: holds_batch_destroy_path, method: :delete, id: 'pending-holds' do %>
+  <table class="table table-responsive-sm">
+    <caption><h2>Holds that are not ready for pickup</h2></caption>
+    <thead>
+
+    <tr>
+      <th scope="col">
+        <%= render SelectAllComponent.new target_keyword: 'pending' %>
+      </th>
+      <th scope="col">Item</th>
+      <th scope="col">Position in queue</th>
+      <th scope="col">Pickup at</th>
+      <th scope="col">Pick up by</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% holds_not_ready.each do |hold| %>
+      <tr id="hold<%= hold.key %>">
+        <td>
+          <%= render SelectAllChildComponent.new key: hold.key, target_keyword: 'pending', name: 'hold_list[]' %>
+        </td>
+        <td class="bibitem">
+          <%= render BibItemComponent.new bibitem: hold %>
+        </td>
+        <td><%= render_queue_position hold %></td>
+        <td class="pickup_at"><span><%= hold.pickup_library_human %></span></td>
+        <td class="pickup-by"><span><%= render_hold_date hold, date_field: 'fill_by_date' %></span></td>
+        <td class="hold_status"><span><%= render_status hold %></span></td>
+      </tr>
+    <% end %>
+    </tbody>
+
+  </table>
+  <% unless Settings.maintenance_mode -%>
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <div class="card">
+          <h3 class="card-header">What to do with selected holds</h3>
+          <div class="row">
+            <div class="col-8">
+              <div class="card-body">
+                <h4>Edit Selected Holds</h4>
+                <%= render partial: 'holds/form_inputs', locals: { selected: '',
+                                                                   validate_pickup_info: false,
+                                                                   make_default: false } %>
+                <br>
+                  <%= submit_tag('Update Selected Holds', class: 'btn btn-primary deflatten', formmethod: 'PATCH', data: { disable_with: 'Please wait...' }) %>
+              </div>
+            </div>
+            <div class="col-4 border-left">
+              <div class="card-body">
+                <h4 class="card-title">Cancel Selected Holds</h4>
+                  <%= submit_tag('Cancel', class: 'btn btn-danger deflatten') %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end -%>
+<% end %>

@@ -1,0 +1,271 @@
+ITEM_TYPE_MAPPING = [{
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP7DAY",
+                         "fields" => {
+                             "description" => "Equipment - 7 day loan", "displayName" => "EQUIP7DAY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP5DAY",
+                         "fields" => {
+                             "description" => "Equipment - 5 day loan", "displayName" => "EQUIP5DAY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "SCORE",
+                         "fields" => {
+                             "description" => "Music Score", "displayName" => "SCORE"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "VIDEO",
+                         "fields" => {
+                             "description" => "Video Material", "displayName" => "VIDEO"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "STATUTE",
+                         "fields" => {
+                             "description" => "Statute", "displayName" => "STATUTE"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP14DAY",
+                         "fields" => {
+                             "description" => "Equipment - 14 day loan", "displayName" => "EQUIP14DAY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "NEWSPAPER",
+                         "fields" => {
+                             "description" => "Newspaper", "displayName" => "NEWSPAPER"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "ILL",
+                         "fields" => {
+                             "description" => "ILL Item", "displayName" => "ILL"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "E-MEDIA",
+                         "fields" => {
+                             "description" => "Computer Disc, etc.", "displayName" => "E-MEDIA"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "BNDSER-HY",
+                         "fields" => {
+                             "description" => "Bound Journal", "displayName" => "BNDSER-HY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "ANY",
+                         "fields" => {
+                             "description" => "ANY", "displayName" => "ANY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "AUDIO",
+                         "fields" => {
+                             "description" => "Audio Material", "displayName" => "AUDIO"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "BNDSER-DSL",
+                         "fields" => {
+                             "description" => "Bound Journal", "displayName" => "BNDSER-DSL"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP3DAY",
+                         "fields" => {
+                             "description" => "Equipment - 3 day loan", "displayName" => "EQUIP3DAY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "INSTR-MATL",
+                         "fields" => {
+                             "description" => "Instructional Material", "displayName" => "INSTR-MATL"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "MAPSPEC",
+                         "fields" => {
+                             "description" => "Map for Use In Library Only", "displayName" => "MAPSPEC"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "REPORTER",
+                         "fields" => {
+                             "description" => "Reporter", "displayName" => "REPORTER"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "ATLAS",
+                         "fields" => {
+                             "description" => "Atlas", "displayName" => "ATLAS"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP4HR",
+                         "fields" => {
+                             "description" => "Equipment - 4 hour loan", "displayName" => "EQUIP4HR"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "REF-ITEM",
+                         "fields" => {
+                             "description" => "Book, Reference", "displayName" => "REF-ITEM"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "THESIS-B",
+                         "fields" => {
+                             "description" => "Penn State Thesis (Bachelors)", "displayName" => "THESIS-B"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "BOOKSPEC",
+                         "fields" => {
+                             "description" => "Book for Use In Library Only", "displayName" => "BOOKSPEC"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "BOOKFLOAT",
+                         "fields" => {
+                             "description" => "Book", "displayName" => "BOOKFLOAT"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "THESIS-D",
+                         "fields" => {
+                             "description" => "Penn State Thesis (Doctoral)", "displayName" => "THESIS-D"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EBOOKREADR",
+                         "fields" => {
+                             "description" => "E-book Reader", "displayName" => "EBOOKREADR"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "THESIS-M",
+                         "fields" => {
+                             "description" => "Penn State Thesis (Masters)", "displayName" => "THESIS-M"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "MICROFORM",
+                         "fields" => {
+                             "description" => "Microfilm, Microfiche, etc.", "displayName" => "MICROFORM"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "PERIODSPEC",
+                         "fields" => {
+                             "description" => "Bound Journal, ask at service desk for 24 hour loan", "displayName" => "PERIODSPEC"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "PERIODICAL",
+                         "fields" => {
+                             "description" => "Bound Journal", "displayName" => "PERIODICAL"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "FOLDER",
+                         "fields" => {
+                             "description" => "File Folder", "displayName" => "FOLDER"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "JUVENILEBK",
+                         "fields" => {
+                             "description" => "Book, Juvenile", "displayName" => "JUVENILEBK"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "SERIAL",
+                         "fields" => {
+                             "description" => "Book", "displayName" => "SERIAL"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "SCORESPEC",
+                         "fields" => {
+                             "description" => "Music Score for Use in Library Only", "displayName" => "SCORESPEC"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "PALCI",
+                         "fields" => {
+                             "description" => "PALCI", "displayName" => "PALCI"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "ARCHIVES",
+                         "fields" => {
+                             "description" => "Archives & Manuscripts", "displayName" => "ARCHIVES"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "MULTIMEDIA",
+                         "fields" => {
+                             "description" => "Multimedia Material", "displayName" => "MULTIMEDIA"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP7DAY5",
+                         "fields" => {
+                             "description" => "7day loan, $5/day, $100 max", "displayName" => "EQUIP7DAY5"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "CARRELKEY",
+                         "fields" => {
+                             "description" => "Carrel Key Pattee", "displayName" => "CARRELKEY"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "ONLINE",
+                         "fields" => {
+                             "description" => "Online Resource", "displayName" => "ONLINE"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP24FEE",
+                         "fields" => {
+                             "description" => "Equipment - 24 hour loan with fees", "displayName" => "EQUIP24FEE"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "EQUIP24HR",
+                         "fields" => {
+                             "description" => "Equipment - 24 hour loan", "displayName" => "EQUIP24HR"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "LAPTOP",
+                         "fields" => {
+                             "description" => "Laptop Computer", "displayName" => "LAPTOP"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "BOOK",
+                         "fields" => {
+                             "description" => "Book", "displayName" => "BOOK"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "UNKNOWN",
+                         "fields" => {
+                             "description" => "Unknown", "displayName" => "UNKNOWN"
+                         }
+                     }, {
+                         "resource" => "/policy/itemType",
+                         "key" => "MAP",
+                         "fields" => {
+                             "description" => "Map", "displayName" => "MAP"
+                         }
+                     }]

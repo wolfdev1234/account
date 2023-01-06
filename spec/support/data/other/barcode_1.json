@@ -1,0 +1,75 @@
+{
+  "resource": "/catalog/item",
+  "key": "17036759:4:1",
+  "fields": {
+    "itemCategory4": null,
+    "itemCategory3": null,
+    "itemCategory2": null,
+    "itemType": {
+      "resource": "/policy/itemType",
+      "key": "PERIODICAL"
+    },
+    "itemCategory1": null,
+    "itemCategory5": null,
+    "systemModifiedDate": "2018-07-10T14:47:00-04:00",
+    "circulate": true,
+    "currentLocation": {
+      "resource": "/policy/location",
+      "key": "STACKS-EM"
+    },
+    "call": {
+      "resource": "/catalog/call",
+      "key": "17036759:4",
+      "fields": {
+        "library": {
+          "resource": "/policy/library",
+          "key": "UP-EMS"
+        },
+        "callNumber": "TN805.A1C63",
+        "shadowed": false,
+        "volumetric": " v.39 2017",
+        "sortCallNumber": "TN 000805 .A1C63  V.000039 002017",
+        "dispCallNumber": "TN805.A1C63 v.39 2017",
+        "bib": {
+          "resource": "/catalog/bib",
+          "key": "17036759"
+        },
+        "classification": {
+          "resource": "/policy/classification",
+          "key": "LCPER"
+        },
+        "systemModifiedDate": "2018-07-10T14:47:00-04:00"
+      }
+    },
+    "mediaDesk": null,
+    "pieces": 1,
+    "createdDate": "2018-07-10",
+    "library": {
+      "resource": "/policy/library",
+      "key": "UP-EMS"
+    },
+    "shadowed": false,
+    "permanent": true,
+    "price": {
+      "currencyCode": "USD",
+      "amount": "0.00"
+    },
+    "homeLocation": {
+      "resource": "/policy/location",
+      "key": "STACKS-EM"
+    },
+    "copyNumber": 1,
+    "timesInventoried": 0,
+    "lastInvDate": null,
+    "bib": {
+      "resource": "/catalog/bib",
+      "key": "17036759",
+      "fields": {
+        "shadowed": false,
+        "author": "",
+        "title": "Mining people magazine"
+      }
+    },
+    "barcode": "000062062862"
+  }
+}

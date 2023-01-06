@@ -1,0 +1,11 @@
+<%= label_tag :pickup_library, 'Pickup at:' %>
+<%= select_tag 'pickup_library', render_pickup_libraries(selected),
+               class: 'custom-select', data: 'pickup-location', required: validate_pickup_info %>
+<%= label_tag :pickup_by_date, 'Not needed after:' %>
+<%= date_field_tag :pickup_by_date, default_pickup_by_date(make_default: make_default), placeholder: 'yyyy-mm-dd', required: validate_pickup_info, min: minimum_pickup_by_date %>
+<p class="card-text">
+  <em>
+    The date you enter is not a guaranteed delivery date.
+    You will be notified by email if your request cannot be filled.
+  </em>
+</p>

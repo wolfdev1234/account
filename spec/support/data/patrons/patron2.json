@@ -1,0 +1,220 @@
+{
+  "resource": "/user/patron",
+  "key": "104889",
+  "fields": {
+    "lastName": "LASTNAME",
+    "circRecordList": [
+      {
+        "resource": "/circulation/circRecord",
+        "key": "2145643:5:1:1",
+        "fields": {
+          "circulationRule": {
+            "resource": "/policy/circulationRule",
+            "key": "FASTSEMEST"
+          },
+          "recallDueDate": null,
+          "patron": {
+            "resource": "/user/patron",
+            "key": "18511"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "2145643:5:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "THESIS-B"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2017-02-21T10:26:00-05:00",
+              "circulate": false,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "CHECKEDOUT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "2145643:5",
+                "fields": {
+                  "sortCallNumber": "THESIS 2000SLEVIT,AC",
+                  "dispCallNumber": "Thesis 2000sLevit,AC"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2001-04-14",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-ANNEX"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "AX-CATALOG"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "2145643",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Levit, Alex C.",
+                  "title": "The labor situation in the Las Mercedes free trade zone in Managua, Nicaragua"
+                }
+              },
+              "barcode": "000046809414"
+            }
+          },
+          "piecesReturned": 0,
+          "dueDate": "2020-05-07T23:59:00-04:00",
+          "renewalCount": 69,
+          "renewalDate": "2020-01-30T16:15:00-05:00",
+          "estimatedOverdueAmount": {
+            "currencyCode": "USD",
+            "amount": "0.00"
+          },
+          "seenRenewalsRemaining": null,
+          "library": {
+            "resource": "/policy/library",
+            "key": "UP-PAT"
+          },
+          "checkOutDate": "2007-07-03T10:34:00-04:00",
+          "claimsReturnedDate": null,
+          "overdue": true,
+          "unseenRenewalsRemaining": null,
+          "recalledDate": null,
+          "status": "ACTIVE"
+        }
+      }, {
+        "resource": "/circulation/circRecord",
+        "key": "3591032:1:1:1",
+        "fields": {
+          "circulationRule": {
+            "resource": "/policy/circulationRule",
+            "key": "FASTSEMEST"
+          },
+          "recallDueDate": "2020-08-04T10:34:00-04:00",
+          "patron": {
+            "resource": "/user/patron",
+            "key": "18511"
+          },
+          "item": {
+            "resource": "/catalog/item",
+            "key": "3591032:1:1",
+            "fields": {
+              "itemCategory4": null,
+              "itemCategory3": null,
+              "itemCategory2": null,
+              "itemType": {
+                "resource": "/policy/itemType",
+                "key": "BOOK"
+              },
+              "itemCategory1": null,
+              "itemCategory5": null,
+              "systemModifiedDate": "2014-03-07T21:32:00-05:00",
+              "circulate": false,
+              "currentLocation": {
+                "resource": "/policy/location",
+                "key": "CHECKEDOUT"
+              },
+              "call": {
+                "resource": "/catalog/call",
+                "key": "3591032:1",
+                "fields": {
+                  "sortCallNumber": "HD 008110.5 .C667  2007",
+                  "dispCallNumber": "HD8110.5.C667 2007"
+                }
+              },
+              "mediaDesk": null,
+              "pieces": 1,
+              "createdDate": "2006-12-19",
+              "library": {
+                "resource": "/policy/library",
+                "key": "UP-PAT"
+              },
+              "shadowed": false,
+              "permanent": true,
+              "price": {
+                "currencyCode": "USD",
+                "amount": "0.00"
+              },
+              "homeLocation": {
+                "resource": "/policy/location",
+                "key": "PATERNO-3"
+              },
+              "copyNumber": 1,
+              "timesInventoried": 0,
+              "lastInvDate": null,
+              "bib": {
+                "resource": "/catalog/bib",
+                "key": "3591032",
+                "fields": {
+                  "shadowed": false,
+                  "author": "Cook, Maria Lorena.",
+                  "title": "The politics of labor reform in Latin America : between flexibility and rights"
+                }
+              },
+              "barcode": "000059001720"
+            }
+          },
+          "piecesReturned": 0,
+          "dueDate": "2020-05-07T23:59:00-04:00",
+          "renewalCount": 58,
+          "renewalDate": "2020-01-30T16:15:00-05:00",
+          "estimatedOverdueAmount": {
+            "currencyCode": "USD",
+            "amount": "10.00"
+          },
+          "seenRenewalsRemaining": null,
+          "library": {
+            "resource": "/policy/library",
+            "key": "UP-PAT"
+          },
+          "checkOutDate": "2007-07-03T10:34:00-04:00",
+          "claimsReturnedDate": "2007-08-03T10:34:00-04:00",
+          "overdue": true,
+          "unseenRenewalsRemaining": null,
+          "recalledDate": "2020-01-03T10:34:00-04:00",
+          "status": "ACTIVE"
+        }
+      }
+    ],
+    "privilegeExpiresDate": null,
+    "displayName": "LASTNAME, FIRSTNAME",
+    "profile": {
+      "resource": "/policy/userProfile",
+      "key": "FACULTY"
+    },
+    "groupId": "",
+    "suffix": "",
+    "title": "",
+    "claimsReturnedCount": 0,
+    "alternateID": "ZZZ55555",
+    "firstName": "FIRSTNAME",
+    "standing": {
+      "resource": "/policy/patronStanding",
+      "key": "OK"
+    },
+    "library": {
+      "resource": "/policy/library",
+      "key": "ALTOONA"
+    },
+    "usePreferredName": false,
+    "keepCircHistory": "CIRCRULE",
+    "middleName": "H",
+    "preferredName": "",
+    "department": "",
+    "barcode": "999982273"
+  }
+}

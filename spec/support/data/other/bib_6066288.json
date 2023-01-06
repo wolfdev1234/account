@@ -1,0 +1,1268 @@
+{
+  "resource": "/catalog/bib",
+  "key": "6066288",
+  "fields": {
+    "shadowed": false,
+    "author": "Johnson, Simon, 1963-",
+    "titleControlNumber": "l2010000168",
+    "catalogDate": "2010-05-25",
+    "catalogFormat": {
+      "resource": "/policy/catalogFormat",
+      "key": "MARC"
+    },
+    "modifiedDate": "2016-10-03",
+    "bib": {
+      "standard": "MARC21",
+      "type": "BIB",
+      "leader": "     cam a22      a 4500",
+      "fields": [
+        {
+          "tag": "001",
+          "subfields": [
+            {
+              "code": "_",
+              "data": "a6066288"
+            }
+          ]
+        },
+        {
+          "tag": "003",
+          "subfields": [
+            {
+              "code": "_",
+              "data": "SIRSI"
+            }
+          ]
+        },
+        {
+          "tag": "005",
+          "subfields": [
+            {
+              "code": "_",
+              "data": "20151215161606.0"
+            }
+          ]
+        },
+        {
+          "tag": "008",
+          "subfields": [
+            {
+              "code": "_",
+              "data": "100121t20102010nyua     b    001 0 eng"
+            }
+          ]
+        },
+        {
+          "tag": "010",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "  2010000168"
+            }
+          ]
+        },
+        {
+          "tag": "019",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "MARS"
+            }
+          ]
+        },
+        {
+          "tag": "020",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "9780307379054 :"
+            },
+            {
+              "code": "c",
+              "data": "$26.95"
+            }
+          ]
+        },
+        {
+          "tag": "020",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "0307379051"
+            }
+          ]
+        },
+        {
+          "tag": "035",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "WB3160801"
+            }
+          ]
+        },
+        {
+          "tag": "035",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "(OCoLC)429021924"
+            }
+          ]
+        },
+        {
+          "tag": "040",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "DLC"
+            },
+            {
+              "code": "c",
+              "data": "DLC"
+            },
+            {
+              "code": "d",
+              "data": "YDX"
+            },
+            {
+              "code": "d",
+              "data": "MOF"
+            },
+            {
+              "code": "d",
+              "data": "IK2"
+            },
+            {
+              "code": "d",
+              "data": "YDXCP"
+            },
+            {
+              "code": "d",
+              "data": "GO3"
+            },
+            {
+              "code": "d",
+              "data": "UPZ"
+            },
+            {
+              "code": "d",
+              "data": "BWX"
+            },
+            {
+              "code": "d",
+              "data": "ABG"
+            },
+            {
+              "code": "d",
+              "data": "CDX"
+            },
+            {
+              "code": "d",
+              "data": "LMR"
+            },
+            {
+              "code": "d",
+              "data": "VP@"
+            },
+            {
+              "code": "d",
+              "data": "UtOrBLW"
+            }
+          ]
+        },
+        {
+          "tag": "043",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "n-us---"
+            }
+          ]
+        },
+        {
+          "tag": "049",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "UPMM"
+            }
+          ]
+        },
+        {
+          "tag": "050",
+          "inds": "00",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "HG2491"
+            },
+            {
+              "code": "b",
+              "data": ".J646 2010"
+            }
+          ]
+        },
+        {
+          "tag": "082",
+          "inds": "00",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "332.10973"
+            },
+            {
+              "code": "2",
+              "data": "22"
+            }
+          ]
+        },
+        {
+          "tag": "100",
+          "inds": "1 ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Johnson, Simon,"
+            },
+            {
+              "code": "d",
+              "data": "1963-"
+            }
+          ]
+        },
+        {
+          "tag": "245",
+          "inds": "10",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "13 bankers :"
+            },
+            {
+              "code": "b",
+              "data": "the Wall Street takeover and the next financial meltdown /"
+            },
+            {
+              "code": "c",
+              "data": "Simon Johnson and James Kwak."
+            }
+          ]
+        },
+        {
+          "tag": "246",
+          "inds": "3 ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Thirteen bankers"
+            }
+          ]
+        },
+        {
+          "tag": "250",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "1st ed."
+            }
+          ]
+        },
+        {
+          "tag": "264",
+          "inds": " 1",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "New York :"
+            },
+            {
+              "code": "b",
+              "data": "Pantheon Books,"
+            },
+            {
+              "code": "c",
+              "data": "[2010]"
+            }
+          ]
+        },
+        {
+          "tag": "264",
+          "inds": " 4",
+          "subfields": [
+            {
+              "code": "c",
+              "data": "©2010"
+            }
+          ]
+        },
+        {
+          "tag": "300",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "304 pages :"
+            },
+            {
+              "code": "b",
+              "data": "illustrations ;"
+            },
+            {
+              "code": "c",
+              "data": "25 cm"
+            }
+          ]
+        },
+        {
+          "tag": "336",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "text"
+            },
+            {
+              "code": "b",
+              "data": "txt"
+            },
+            {
+              "code": "2",
+              "data": "rdacontent"
+            }
+          ]
+        },
+        {
+          "tag": "337",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "unmediated"
+            },
+            {
+              "code": "b",
+              "data": "n"
+            },
+            {
+              "code": "2",
+              "data": "rdamedia"
+            }
+          ]
+        },
+        {
+          "tag": "338",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "volume"
+            },
+            {
+              "code": "b",
+              "data": "nc"
+            },
+            {
+              "code": "2",
+              "data": "rdacarrier"
+            }
+          ]
+        },
+        {
+          "tag": "504",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Includes bibliographical references (pages [223]-278) and index."
+            }
+          ]
+        },
+        {
+          "tag": "505",
+          "inds": "0 ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "13 bankers -- Thomas Jefferson and the financial aristocracy -- Other people's oligarchs -- Wall Street rising : 1980-- -- \"Greed is good\" : the takeover -- The best deal ever -- Too big to fail -- The American oligarchy : six banks."
+            }
+          ]
+        },
+        {
+          "tag": "520",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Johnson and Kwak examine not only how Wall Street's ideology, wealth, and political power among policy makers in Washington led to the financial debacle of 2008, but also what the lessons learned portend for the future."
+            }
+          ]
+        },
+        {
+          "tag": "541",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "3",
+              "data": "Abington copy:"
+            },
+            {
+              "code": "c",
+              "data": "Purchased with funds from the"
+            },
+            {
+              "code": "a",
+              "data": "Paterno Libraries Endowment;"
+            },
+            {
+              "code": "d",
+              "data": "2009."
+            },
+            {
+              "code": "5",
+              "data": "PSt."
+            }
+          ]
+        },
+        {
+          "tag": "541",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "3",
+              "data": "Brandywine copy:"
+            },
+            {
+              "code": "c",
+              "data": "Purchased with funds from the"
+            },
+            {
+              "code": "a",
+              "data": "Paterno Libraries Endowment;"
+            },
+            {
+              "code": "d",
+              "data": "2009."
+            },
+            {
+              "code": "5",
+              "data": "PSt."
+            }
+          ]
+        },
+        {
+          "tag": "541",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "3",
+              "data": "Wilkes-Barre copy:"
+            },
+            {
+              "code": "c",
+              "data": "Purchased with funds from the"
+            },
+            {
+              "code": "a",
+              "data": "Paterno Libraries Endowment;"
+            },
+            {
+              "code": "d",
+              "data": "2009."
+            },
+            {
+              "code": "5",
+              "data": "PSt."
+            }
+          ]
+        },
+        {
+          "tag": "596",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "ABINGTON BERKS BRANDYWINE HARRISBURG WILKESBAR UP-PAT ZREMOVED"
+            }
+          ]
+        },
+        {
+          "tag": "650",
+          "inds": " 0",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Banks and banking"
+            },
+            {
+              "code": "z",
+              "data": "United States."
+            }
+          ]
+        },
+        {
+          "tag": "650",
+          "inds": " 0",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Bank failures"
+            },
+            {
+              "code": "z",
+              "data": "United States."
+            }
+          ]
+        },
+        {
+          "tag": "650",
+          "inds": " 0",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Finance"
+            },
+            {
+              "code": "z",
+              "data": "United States."
+            }
+          ]
+        },
+        {
+          "tag": "650",
+          "inds": " 0",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Financial crises"
+            },
+            {
+              "code": "z",
+              "data": "United States."
+            }
+          ]
+        },
+        {
+          "tag": "700",
+          "inds": "1 ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "Kwak, James."
+            }
+          ]
+        },
+        {
+          "tag": "949",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "HG2491.J646 2010"
+            },
+            {
+              "code": "h",
+              "data": "WBSTBK"
+            },
+            {
+              "code": "i",
+              "data": "000067805754"
+            },
+            {
+              "code": "k",
+              "data": "STACKS-WB"
+            },
+            {
+              "code": "l",
+              "data": "STACKS-WB"
+            },
+            {
+              "code": "m",
+              "data": "WILKESBAR"
+            },
+            {
+              "code": "r",
+              "data": "C"
+            },
+            {
+              "code": "s",
+              "data": "Yes"
+            },
+            {
+              "code": "t",
+              "data": "BOOK"
+            },
+            {
+              "code": "w",
+              "data": "LC"
+            }
+          ]
+        },
+        {
+          "tag": "949",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "HG2491.J646 2010"
+            },
+            {
+              "code": "h",
+              "data": "HBLEBK"
+            },
+            {
+              "code": "i",
+              "data": "000067784004"
+            },
+            {
+              "code": "k",
+              "data": "LEISURE-HB"
+            },
+            {
+              "code": "l",
+              "data": "LEISURE-HB"
+            },
+            {
+              "code": "m",
+              "data": "HARRISBURG"
+            },
+            {
+              "code": "r",
+              "data": "NC"
+            },
+            {
+              "code": "s",
+              "data": "Yes"
+            },
+            {
+              "code": "t",
+              "data": "BOOK"
+            },
+            {
+              "code": "w",
+              "data": "LC"
+            }
+          ]
+        },
+        {
+          "tag": "949",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "HG2491.J646 2010"
+            },
+            {
+              "code": "h",
+              "data": "DESTBK"
+            },
+            {
+              "code": "i",
+              "data": "000067897247"
+            },
+            {
+              "code": "k",
+              "data": "STACKS-DE"
+            },
+            {
+              "code": "l",
+              "data": "STACKS-DE"
+            },
+            {
+              "code": "m",
+              "data": "BRANDYWINE"
+            },
+            {
+              "code": "r",
+              "data": "C"
+            },
+            {
+              "code": "s",
+              "data": "Yes"
+            },
+            {
+              "code": "t",
+              "data": "BOOK"
+            },
+            {
+              "code": "w",
+              "data": "LC"
+            }
+          ]
+        },
+        {
+          "tag": "949",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "HG2491.J646 2010"
+            },
+            {
+              "code": "h",
+              "data": "ABSTBK"
+            },
+            {
+              "code": "i",
+              "data": "000064209296"
+            },
+            {
+              "code": "k",
+              "data": "STACKS-AB"
+            },
+            {
+              "code": "l",
+              "data": "STACKS-AB"
+            },
+            {
+              "code": "m",
+              "data": "ABINGTON"
+            },
+            {
+              "code": "r",
+              "data": "C"
+            },
+            {
+              "code": "s",
+              "data": "Yes"
+            },
+            {
+              "code": "t",
+              "data": "BOOK"
+            },
+            {
+              "code": "w",
+              "data": "LC"
+            }
+          ]
+        },
+        {
+          "tag": "980",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "2010-05-20"
+            },
+            {
+              "code": "e",
+              "data": "22.10"
+            },
+            {
+              "code": "f",
+              "data": "991489"
+            },
+            {
+              "code": "j",
+              "data": "CLOTH"
+            },
+            {
+              "code": "n",
+              "data": "YBPWB"
+            },
+            {
+              "code": "x",
+              "data": "138.35"
+            }
+          ]
+        },
+        {
+          "tag": "980",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "2010-05-13"
+            },
+            {
+              "code": "e",
+              "data": "22.10"
+            },
+            {
+              "code": "f",
+              "data": "985067"
+            },
+            {
+              "code": "j",
+              "data": "CLOTH"
+            },
+            {
+              "code": "n",
+              "data": "YBPHA"
+            },
+            {
+              "code": "x",
+              "data": "845.31"
+            }
+          ]
+        },
+        {
+          "tag": "980",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "2010-05-06"
+            },
+            {
+              "code": "e",
+              "data": "22.10"
+            },
+            {
+              "code": "f",
+              "data": "979343"
+            },
+            {
+              "code": "j",
+              "data": "CLOTH"
+            },
+            {
+              "code": "n",
+              "data": "YBPDE"
+            },
+            {
+              "code": "x",
+              "data": "808.35"
+            }
+          ]
+        },
+        {
+          "tag": "980",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "2010-04-29"
+            },
+            {
+              "code": "e",
+              "data": "22.10"
+            },
+            {
+              "code": "f",
+              "data": "973237"
+            },
+            {
+              "code": "j",
+              "data": "CLOTH"
+            },
+            {
+              "code": "n",
+              "data": "YBPAB"
+            },
+            {
+              "code": "x",
+              "data": "144.20"
+            }
+          ]
+        },
+        {
+          "tag": "993",
+          "inds": "  ",
+          "subfields": [
+            {
+              "code": "a",
+              "data": "700000010275 "
+            },
+            {
+              "code": "n",
+              "data": "Paterno Libraries Endowment (Campus College Libraries)"
+            }
+          ]
+        }
+      ]
+    },
+    "systemModifiedDate": "2020-07-01T15:35:00-04:00",
+    "title": "13 bankers : the Wall Street takeover and the next financial meltdown",
+    "callList": [
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:1",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "UP-PAT"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:1:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:1"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOK"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "UP-PAT"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "PATERNO-3"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000068095208",
+                "circulate": false,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "CHECKEDOUT"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:2",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "ABINGTON"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:2:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:2"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOKFLOAT"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "ABINGTON"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-AB"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000064209296",
+                "circulate": true,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-AB"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:6",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "BERKS"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:6:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:6"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOKFLOAT"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "BERKS"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-BK"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000061236172",
+                "circulate": true,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-BK"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:3",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "BRANDYWINE"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:3:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:3"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOKFLOAT"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "BRANDYWINE"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-DE"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000067897247",
+                "circulate": true,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-DE"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:4",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "HARRISBURG"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:4:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:4"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOKFLOAT"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "HARRISBURG"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-HB3"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000067784004",
+                "circulate": true,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-HB3"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:5",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "WILKESBAR"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [
+            {
+              "resource": "/catalog/item",
+              "key": "6066288:5:1",
+              "fields": {
+                "call": {
+                  "resource": "/catalog/call",
+                  "key": "6066288:5"
+                },
+                "mediaDesk": null,
+                "itemType": {
+                  "resource": "/policy/itemType",
+                  "key": "BOOKFLOAT"
+                },
+                "library": {
+                  "resource": "/policy/library",
+                  "key": "WILKESBAR"
+                },
+                "shadowed": false,
+                "homeLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-WB"
+                },
+                "copyNumber": 1,
+                "bib": {
+                  "resource": "/catalog/bib",
+                  "key": "6066288"
+                },
+                "barcode": "000067805754",
+                "circulate": true,
+                "currentLocation": {
+                  "resource": "/policy/location",
+                  "key": "STACKS-WB"
+                }
+              }
+            }
+          ],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      },
+      {
+        "resource": "/catalog/call",
+        "key": "6066288:7",
+        "fields": {
+          "library": {
+            "resource": "/policy/library",
+            "key": "ZREMOVED"
+          },
+          "callNumber": "HG2491.J646 2010",
+          "shadowed": false,
+          "volumetric": null,
+          "dispCallNumber": "HG2491.J646 2010",
+          "bib": {
+            "resource": "/catalog/bib",
+            "key": "6066288"
+          },
+          "itemList": [],
+          "classification": {
+            "resource": "/policy/classification",
+            "key": "LC"
+          }
+        }
+      }
+    ],
+    "createDate": "2010-04-02"
+  }
+}

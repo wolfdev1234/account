@@ -1,0 +1,51 @@
+<% unless patron.standing_human.blank? %>
+  <div class="page-section">
+    <h3>Alerts: </h3>
+    <div class="ml-4">
+      <p><%= patron.standing_human %></p>
+
+      <% if patron.eligible_for_wage_garnishment? %>
+        <p>
+          To unbar your account, please
+          <a href="<%= lending_policy_accept_path %>">accept the University Libraries lending policy</a>.
+        </p>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<div class="page-section">
+  <h1>Summary</h1>
+
+  <p>Library account record for <strong><%= patron.display_name %></strong></p>
+
+  <% if patron.checkouts.blank? && patron.holds.blank? && patron.fines.blank? %>
+      <p>You do not have any outstanding materials or bills.</p>
+  <% else %>
+    <div class="row">
+      <%= render DashboardItemComponent.new(model: 'Fines',
+                                            count: patron.fines&.sum(&:owed_amount),
+                                            currency: true,
+                                            count_term: 'You owe') %>
+
+      <%= render DashboardItemComponent.new(model: 'Checkouts',
+                                            count: patron.checkouts&.length,
+                                            count_term: 'Total checked out',
+                                            items: [
+                                              { label: 'recalled', count: patron.checkouts&.select(&:recalled?)&.length },
+                                              { label: 'overdue', count: patron.checkouts&.select(&:overdue?)&.length }
+                                            ]) %>
+
+      <%= render DashboardItemComponent.new(model: 'Holds',
+                                            count: patron.holds&.length,
+                                            count_term: 'Total holds',
+                                            items: [
+                                              { label: 'ready for pickup',
+                                                count: patron.holds&.select(&:ready_for_pickup?)&.length },
+                                              { label: 'not yet ready for pickup',
+                                                count: patron.holds&.reject(&:ready_for_pickup?)&.length }
+                                            ]) %>
+    </div>
+  <% end %>
+
+</div>

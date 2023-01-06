@@ -1,0 +1,30 @@
+<%= form_with url: holds_batch_destroy_path, method: :delete, id: 'active-holds' do %>
+  <table class="table table-responsive-sm">
+    <caption><h2>Holds that are ready for pickup</h2></caption>
+    <thead>
+    <tr>
+      <th scope="col"><%= render SelectAllComponent.new target_keyword: 'ready' %></th>
+      <th scope="col">Item</th>
+      <th scope="col">Pickup at</th>
+      <th scope="col">Expires</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% holds_ready.each do |hold| %>
+      <tr id="hold<%= hold.key %>">
+        <td>
+          <%= render SelectAllChildComponent.new key: hold.key, target_keyword: 'ready', name: 'hold_list[]' %>
+        </td>
+        <td class="bibitem">
+          <%= render BibItemComponent.new bibitem: hold %>
+        </td>
+        <td><%= hold.pickup_library_human %></td>
+        <td class="hold_status"><%= render_hold_date hold, date_field: 'expiration_date' %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <% unless Settings.maintenance_mode -%>
+    <%= submit_tag('Cancel Selected Holds', class: 'btn btn-danger deflatten') %>
+  <% end %>
+<% end %>

@@ -1,0 +1,8 @@
+{
+  "messageList": [
+    {
+      "code": "unhandledException",
+      "message": "Unhandled exception: class java.lang.NullPointerException"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+version: 1
+
+update_configs:
+  - package_manager: "ruby:bundler"
+    directory: "/"
+    update_schedule: "monthly"
+    default_assignees:
+      - "wolfdev"
+      - "whereismyjetpack"
+
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "monthly"
+    default_assignees:
+      - "wolfdev"
+      - "whereismyjetpack"

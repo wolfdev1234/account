@@ -1,0 +1,7 @@
+{
+  "holdFee": null,
+  "holdRecord": {
+    "resource": "/circulation/holdRecord",
+    "key": "3912343"
+  }
+}

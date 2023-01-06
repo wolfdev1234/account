@@ -1,0 +1,111 @@
+maintenance_mode: false
+# Maintenance until text for date/time
+maintenance_until:
+show_announcement: false
+remote_user_header: <%= ENV.fetch("REMOTE_USER_HEADER") { "HTTP_REMOTE_USER"} %>
+# list of users that can masquerade as other users
+admin_users: []
+announcement:
+  icon:
+  message:
+  html_class:
+symws:
+  webaccess_url:
+  url: <%= ENV.fetch("SYMWS_URL") { nil } %>
+  username: <%= ENV.fetch("SYMWS_USERNAME") { nil } %>
+  pin: "<%= ENV.fetch("SYMWS_PIN") { nil } %>"
+  default_headers:
+    sd_originating_app_id: cs
+    x_sirs_clientID: <%= ENV.fetch("X_SIRS_CLIENTID") { "PSUCATALOG" } %>
+    content_type: 'application/json'
+    accept: 'application/json'
+  additional_headers:
+    sd_prompt_return: <%= ENV.fetch("SYMWS_EDIT_OVERRIDE") { nil } %>
+redis:
+  sidekiq:
+    uri: <%= ENV.fetch("REDIS_SIDEKIQ_URI") { "redis://127.0.0.1:6379/1" } %>
+  database:
+    uri: <%= ENV.fetch("REDIS_DATABASE_URI") { "redis://127.0.0.1:6379/2" } %>
+matomo_id: 11
+pickup_locations:
+  UP-PAT: 'Pattee and Paterno Library - Commons Services Desk'
+  UP-ARCHIT: 'Architecture & Landscape Architecture Library, 111 Stuckeman'
+  UP-MEDICAL: 'College of Medicine (University Park)'
+  HERSHEY: 'College of Medicine (Hershey)'
+  DSL-CARL: 'Dickinson Law (Carlisle)'
+  DSL-UP: 'Penn State Law (University Park)'
+  UP-EMS: 'Earth & Mineral Science Library, 105 Deike'
+  UP-ENGIN: 'Engineering Library, 325 Hammond Building'
+  UP-PAMS: 'Physical & Mathematical Science Library, 201 Davey Lab'
+  UP-OFFICE: 'University Park Faculty/Staff/Graduate Student Office Delivery'
+  ABINGTON: 'Penn State Abington'
+  ALTOONA: 'Penn State Altoona'
+  AA-DOWNTWN: 'Penn State Altoona-Downtown'
+  BEAVER: 'Penn State Beaver'
+  BEHREND: 'Penn State Erie'
+  BERKS: 'Berks Campus Library'
+  BRANDYWINE: 'Penn State Brandywine'
+  DUBOIS: 'Penn State Dubois'
+  FAYETTE: 'Penn State Fayette'
+  GREATVLY: 'Penn State Great Valley'
+  GALLEGHENY: 'Penn State Greater Allegheny'
+  HARRISBURG: 'Harrisburg Campus Library'
+  HAZLETON: 'Penn State Hazleton'
+  LEHIGHVLY: 'Penn State Lehigh Valley'
+  MONTALTO: 'Penn State Mont Alto'
+  NEWKEN: 'Penn State New Kensington'
+  SCHUYLKILL: 'Penn State Schuylkill'
+  WSCRANTON: 'Penn State Scranton'
+  SHENANGO: 'Penn State Shenango'
+  WILKESBAR: 'Penn State Wilkes-Barre'
+  YORK: 'Penn State York'
+  WORLD: 'World Campus'
+pickup_locations_actual:
+  ABINGTON: 'Penn State Abington'
+  ACQ_DSL: 'Acquisitions (Law Schools)'
+  ACQUISTNS: 'Acquisitions (UP)'
+  ALTOONA: 'Altoona Campus Library - Library Circulation Desk'
+  AA-DOWNTWN: 'Penn State Altoona-Downtown'
+  BEAVER: 'Penn State Beaver'
+  BEHREND: 'Penn State Erie'
+  BERKS: 'Berks Campus Library'
+  BRANDYWINE: 'Penn State Brandywine'
+  DSL-CARL: 'Penn State Dickinson Law (Carlisle)'
+  DSL-UP: 'Penn State Law (University Park)'
+  DUBOIS: 'Penn State DuBois'
+  FAYETTE: 'Penn State Fayette'
+  GALLEGHENY: 'Penn State Greater Allegheny'
+  GREATVLY: 'Penn State Great Valley'
+  HARRISBURG: 'Harrisburg Campus Library'
+  HAZLETON: 'Penn State Hazleton'
+  HERSHEY: 'Hershey (College of Medicine)'
+  LEHIGHVLY: 'Penn State Lehigh Valley'
+  MONTALTO: 'Penn State Mont Alto'
+  NEWKEN: 'Penn State New Kensington'
+  ONLINE: 'Online Resource'
+  SCHUYLKILL: 'Penn State Schuylkill'
+  SERIAL-SRV: 'Acquisitions (UP)'
+  SHENANGO: 'Penn State Shenango'
+  UP-ANNEX: 'Library Storage'
+  UP-ARCHIT: 'Architecture & Landscape Architecture Library, 111 Stuckeman'
+  UP-ARTSHUM: 'Arts & Humanities Library (Pattee)'
+  UP-BUSINES: 'Business Library (Paterno)'
+  UP-EMS: 'Earth & Mineral Science Library, 105 Deike'
+  UP-ENGIN: 'Engineering Library, 325 Hammond Building'
+  UP-LIFESCI: 'Life Sciences Library (Paterno)'
+  UP-MAPS: 'Maps and Geospatial Information (Pattee)'
+  UP-MEDICAL: 'College of Medicine (UP)'
+  UP-MICRO: 'Microforms Library (Paterno)'
+  UP-OFFICE: 'Employee Office'
+  UP-PAMS: 'Physical & Mathematical Science Library, 201 Davey Lab'
+  UP-PAT: 'Pattee and Paterno Library - Commons Services Desk'
+  UP-SOCSCI: 'Social Sciences & Education Library (Paterno)'
+  UP-EDUBEHV: 'Social Sciences & Education Library (Paterno)'
+  UP-SPECCOL: 'Special Collections Library (Paterno)'
+  WILKESBAR: 'Penn State Wilkes-Barre'
+  WITHDRAWN: 'Withdrawn'
+  WORLD: 'World Campus'
+  WSCRANTON: 'Penn State Scranton'
+  XTERNAL: 'Associated Libraries'
+  YORK: 'Penn State York'
+  NOTFOUND: "The system is experiencing difficulty displaying this item's pickup location"

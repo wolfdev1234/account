@@ -1,0 +1,12 @@
+# move this file to .envrc and source:
+# source .envrc
+# OR use direnv https://direnv.net/
+export SYMWS_PIN='some-password'
+export SYMWS_URL='some-url'
+export SYMWS_USERNAME='some-username'
+export SYMWS_EDIT_OVERRIDE="enter-overide-here"
+
+
+## Ports exposed on the system Change these from the defaults
+# export APP_PORT=3001
+# export REDIS_PORT=6380 

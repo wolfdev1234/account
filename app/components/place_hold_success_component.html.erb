@@ -1,0 +1,9 @@
+<li class="list-group-item py-3">
+  <p class="card-text">
+    <%= render BibItemComponent.new bibitem: placed_hold %>
+    <small class="text-secondary">
+      <strong>Pickup at</strong>: <%= pickup_library %><br>
+      <strong>Not needed after</strong>: <%= fill_by_date %>
+    </small>
+  </p>
+</li>

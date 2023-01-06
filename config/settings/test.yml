@@ -1,0 +1,10 @@
+symws:
+  webaccess_url: https://example.com/webaccess
+  url: https://example.com/symwsbc
+  default_headers:
+      x_sirs_clientID: SymWSTestClient
+  login_params:
+    login: 'fake_user'
+    password: 'some_password'
+  patron_key: 'some_patron_key'
+  remote_user: 'remote_user'

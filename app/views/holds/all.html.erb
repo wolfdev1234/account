@@ -1,0 +1,14 @@
+<p><%= t('myaccount.holds_info_html') %></p>
+<% if holds_ready.blank? && holds_not_ready.blank? %>
+  <p>You have no holds at this time.</p>
+<% else %>
+  <% if holds_ready.present? %>
+    <%= render partial: 'holds/holds_ready_table', locals: { holds_ready: holds_ready } %>
+  <% else %>
+    <p>You have no holds ready to be picked up at this time.</p>
+  <% end %>
+  <% if holds_not_ready.present? %>
+    <%= render partial: 'holds/holds_not_ready_table', locals: { holds_not_ready: holds_not_ready } %>
+  <% end %>
+
+<% end %>

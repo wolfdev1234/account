@@ -1,0 +1,75 @@
+{
+  "resource": "/catalog/item",
+  "key": "22092848:1:1",
+  "fields": {
+    "itemCategory4": null,
+    "itemCategory3": null,
+    "itemCategory2": null,
+    "itemType": {
+      "resource": "/policy/itemType",
+      "key": "BOOKFLOAT"
+    },
+    "itemCategory1": null,
+    "itemCategory5": null,
+    "systemModifiedDate": "2018-03-07T12:32:00-05:00",
+    "circulate": false,
+    "currentLocation": {
+      "resource": "/policy/location",
+      "key": "CHECKEDOUT"
+    },
+    "call": {
+      "resource": "/catalog/call",
+      "key": "22092848:1",
+      "fields": {
+        "library": {
+          "resource": "/policy/library",
+          "key": "HARRISBURG"
+        },
+        "callNumber": "TK5105.888R83 2017",
+        "shadowed": false,
+        "volumetric": null,
+        "sortCallNumber": "TK 005105.888 R83  2017",
+        "dispCallNumber": "TK5105.888R83 2017",
+        "bib": {
+          "resource": "/catalog/bib",
+          "key": "22092848"
+        },
+        "classification": {
+          "resource": "/policy/classification",
+          "key": "LC"
+        },
+        "systemModifiedDate": "2018-03-07T12:32:00-05:00"
+      }
+    },
+    "mediaDesk": null,
+    "pieces": 1,
+    "createdDate": "2018-01-09",
+    "library": {
+      "resource": "/policy/library",
+      "key": "HARRISBURG"
+    },
+    "shadowed": false,
+    "permanent": true,
+    "price": {
+      "currencyCode": "USD",
+      "amount": "0.00"
+    },
+    "homeLocation": {
+      "resource": "/policy/location",
+      "key": "STACKS-HB3"
+    },
+    "copyNumber": 1,
+    "timesInventoried": 1,
+    "lastInvDate": "2018-03-12",
+    "bib": {
+      "resource": "/catalog/bib",
+      "key": "22092848",
+      "fields": {
+        "shadowed": false,
+        "author": "Ruby, Sam, author.",
+        "title": "Agile web development with Rails 5.1"
+      }
+    },
+    "barcode": "000079741064"
+  }
+}

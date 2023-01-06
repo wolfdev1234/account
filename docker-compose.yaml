@@ -1,0 +1,81 @@
+version: '3.5'
+services:
+  redis:
+    image: redis:7.0.4-alpine3.16
+    volumes:
+      - redis-data:/data
+    ports:
+    - "${REDIS_PORT:-6379}:6379"
+  test:
+    depends_on:
+      - redis
+    command: ["sleep" ,"9999"]
+    environment:
+      SYMWS_URL: "${SYMWS_URL}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      SYMWS_USERNAME: "${SYMWS_USERNAME:-myaccount}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      REDIS_SIDEKIQ_URI: "redis://redis:6379/1"
+      RAILS_ENV: "test"
+      REDIS_DATABASE_URI: "redis://redis:6379/2"
+      SYMWS_PIN: "${SYMWS_PIN}"
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      target: test
+    volumes:
+    - bundle-data:/app/vendor/bundle
+    - node-data:/app/node_modules
+    - type: bind
+      source: ./
+      target: /app/
+  sidekiq:
+    environment:
+      SYMWS_URL: "${SYMWS_URL}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      SYMWS_USERNAME: "${SYMWS_USERNAME:-myaccount}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      REDIS_SIDEKIQ_URI: "redis://redis:6379/1"
+      RAILS_ENV: "development"
+      REDIS_DATABASE_URI: "redis://redis:6379/2"
+      SYMWS_PIN: "${SYMWS_PIN}"
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      target: base
+    volumes:
+    - bundle-data:/app/vendor/bundle
+    - node-data:/app/node_modules
+    - type: bind
+      source: ./
+      target: /app/
+    command: ["/app/bin/sidekiq"]
+  web:
+    environment:
+      SYMWS_URL: "${SYMWS_URL}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      SYMWS_USERNAME: "${SYMWS_USERNAME:-myaccount}"
+      SYMWS_EDIT_OVERRIDE: "${SYMWS_EDIT_OVERRIDE}"
+      REDIS_SIDEKIQ_URI: "redis://redis:6379/1"
+      RAILS_ENV: "development"
+      REDIS_DATABASE_URI: "redis://redis:6379/2"
+      SYMWS_PIN: "${SYMWS_PIN}"
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      target: base
+    volumes:
+    - bundle-data:/app/vendor/bundle
+    - node-data:/app/node_modules
+    - type: bind
+      source: ./
+      target: /app/
+    ports:
+      - "${APP_PORT:-3000}:3000"
+volumes:
+  redis-data:
+  bundle-data:
+  node-data:

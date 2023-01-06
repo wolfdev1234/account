@@ -1,0 +1,26 @@
+<p>NOTE: Fines for items that are still checked out will not appear here until the items have been returned</p>
+<table class="table">
+  <caption><h2>Bills Table</h2></caption>
+  <thead>
+  <tr>
+    <th scope="col">Title</th>
+    <th scope="col">Author</th>
+    <th scope="col">Reason</th>
+    <th scope="col">You owe</th>
+    <th scope="col">Date billed</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @fines.each do |fine| %>
+    <tr>
+      <td><%= fine_title_display(fine: fine) %></td>
+      <td><%= fine.author %></td>
+      <td><%= fine.status_human %></td>
+      <td><%= number_to_currency fine.owed_amount %></td>
+      <td><%= l(fine.bill_date, format: :short) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+
+</table>

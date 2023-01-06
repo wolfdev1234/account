@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <%= render 'layouts/head' %>
+
+  <body class="d-flex flex-column h-100">
+    <%= render 'layouts/announcement' if Settings.show_announcement %>
+    <%= render 'layouts/top_bar' %>
+    <%= render 'layouts/navigation' %>
+
+    <main id="main-container" class="container my-3" role="main">
+      <div class="row">
+        <div class="col-md-12">
+          <%= render 'content/maintenance' if Settings.maintenance_mode %>
+          <%= render partial: 'shared/flash_msg', layout: nil %>
+          <%= yield %>
+        </div>
+      </div>
+      <%= render 'content/user_util_links' %>
+    </main>
+
+    <%= render 'layouts/footer' %>
+
+    <%= render 'shared/session_expiry_modal' %>
+
+    <div aria-live="polite" aria-atomic="true">
+      <div class="toast-insertion-point" style="position: fixed; top: 15px; right: 15px;"></div>
+    </div>
+  </body>
+</html>

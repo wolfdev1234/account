@@ -1,0 +1,30 @@
+<h1>Acceptance of University Libraries Lending Policy</h1>
+
+<p>
+  The University Libraries has revised its Lending Policy to include the following statement:
+</p>
+
+<p class="mx-5">
+  "For lost materials, if payment is not received for replacement costs within 6 months from notification that the money is due at the Libraries, payment will be payroll deducted for current University employees. For all other fees, if payment is not received within 60 days, payment will be payroll deducted. Additional fees may be charged for this process."
+</p>
+
+<p>
+  The Lending Policy can be seen in its entirety on the Pennsylvania State University Libraries Web Page at <a href="https://libraries.psu.edu/services/borrow-renew/borrowing-privileges">https://libraries.psu.edu/services/borrow-renew/borrowing-privileges</a>. The policy is subject to change without individual notice. Any change in borrower status or address should be reported to the Libraries immediately.
+</p>
+
+<p>
+  By accepting these terms, the applicant agrees to the policies of the Pennsylvania State University Libraries. Please note that acceptance of this policy is necessary to maintain your borrowing privileges.
+</p>
+
+<hr class="my-4" />
+
+<%= form_with url: lending_policy_accept_path, method: :post, id: 'accept-lending-policy-form', local: true do %>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="accept-lending-policy-checkbox">
+    <label class="form-check-label" for="accept-lending-policy-checkbox">
+      I authorize the Libraries, after appropriate notice, to deduct from my paycheck any fees incurred. Additional fees may be charged for this process. Upon acceptance of this policy, my borrowing privileges will be re-instated.
+    </label>
+  </div>
+
+  <%= submit_tag('Accept & Continue', class: 'btn btn-primary', id: 'accept-lending-policy-submit', disabled: true) %>
+<% end %>

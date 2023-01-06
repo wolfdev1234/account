@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light py-0" role="navigation">
+  <div class="container">
+    <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills nav-justified container pr-0 d-inline-block d-sm-flex">
+        <%= render partial: 'shared/nav_link', locals: { name: 'Account Summary', path: summaries_path } %>
+        <%= render partial: 'shared/nav_link', locals: { name: 'Checkouts/Renewals', path: checkouts_path } %>
+        <%= render partial: 'shared/nav_link', locals: { name: 'Holds', path: holds_path } %>
+        <%= render partial: 'shared/nav_link', locals: { name: 'Bills', path: fines_path } %>
+      </ul>
+    </div>
+  </div>
+</nav>

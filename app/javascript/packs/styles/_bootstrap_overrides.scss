@@ -1,0 +1,11 @@
+@import '~bootstrap';
+
+caption {
+  @extend h3;
+  caption-side: top;
+  color: $body-color;
+}
+
+.navbar {
+  display: block;
+}

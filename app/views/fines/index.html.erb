@@ -1,0 +1,8 @@
+<h1>Bills</h1>
+
+<% if @fines.present? %>
+  <%= render 'fines/fines_table' %>
+  <p>Total that you owe: <%= number_to_currency @total_owed %></p>
+<% else %>
+  <p>You have no bills or fines at this time.</p>
+<% end %>

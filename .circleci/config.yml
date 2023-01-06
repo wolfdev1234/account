@@ -1,0 +1,149 @@
+version: 2.1
+
+orbs:
+  docker: circleci/docker@2.1.2
+
+jobs:
+  release:
+    docker:
+      - image: harbor.k8s.libraries.psu.edu/library/ci-utils:$CI_UTILS_IMG_TAG
+    environment:
+      REGISTRY_HOST: harbor.k8s.libraries.psu.edu
+      REGISTRY_REPO: library/myaccount
+      GITHUB_USER: 'psu-stewardship-bot'
+      CONFIG_REPO: git@github.com:psu-libraries/myaccount-config.git
+    steps:
+      - add_ssh_keys
+      - run:
+          name: "Release"
+          command: |
+            /usr/local/bin/tag-image
+            ssh-keyscan github.com > ~/.ssh/known_hosts
+            git clone $CONFIG_REPO
+            cd myaccount-config
+            /usr/local/bin/pr-release clusters/prod/manifests/myaccount/prod.yaml
+
+  publish:
+    docker:
+      - image: harbor.k8s.libraries.psu.edu/library/ci-utils:$CI_UTILS_IMG_TAG
+        user: root
+    steps:
+      - setup_remote_docker:
+          version: 20.10.14
+      - checkout
+      - docker/check:
+          registry: harbor.k8s.libraries.psu.edu
+      - docker/build:
+          image: library/myaccount
+          registry: harbor.k8s.libraries.psu.edu
+          use-buildkit: true
+          tag: "cache,$CIRCLE_SHA1"
+          extra_build_args: "--target production"
+      - docker/build:
+          image: library/myaccount
+          registry: harbor.k8s.libraries.psu.edu
+          use-buildkit: true
+          tag: circle
+          extra_build_args: "--target ci"
+      - docker/push:
+          digest-path: /tmp/digest.txt
+          image: library/myaccount
+          registry: harbor.k8s.libraries.psu.edu
+          tag: "$CIRCLE_SHA1,circle,cache"
+      - run:
+          command: |
+            echo "Digest is: $(</tmp/digest.txt)"
+  deploy:
+    docker:
+      - image: harbor.k8s.libraries.psu.edu/library/ci-utils:$CI_UTILS_IMG_TAG
+    environment:
+      CONFIG_REPO: git@github.com:psu-libraries/myaccount-config.git
+    steps:
+      - add_ssh_keys
+      - run:
+          name: "Updating Config Repo"
+          command: |
+            ssh-keyscan github.com > ~/.ssh/known_hosts
+            git clone $CONFIG_REPO
+            cd myaccount-config
+            ./bin/generate_app
+  test:
+    docker:
+      - image: harbor.k8s.libraries.psu.edu/library/myaccount:circle
+      - image: redis:7.0.4-alpine3.16
+    environment:
+      RAILS_ENV: test
+    steps:
+    - checkout
+    - restore_cache:
+        keys:
+          - bundle-{{ checksum "Gemfile.lock" }}-v3
+    - run:
+        name: "Bundle"
+        command: |
+          gem install bundler
+          bundle check --path vendor/bundle || bundle install --deployment
+    - save_cache:
+        paths:
+          - vendor/bundle
+        key: bundle-{{ checksum "Gemfile.lock" }}-v3
+    - restore_cache:
+        keys:
+          - yarn-{{ checksum "yarn.lock" }}-v3
+    - run:
+        name: "Yarn"
+        command: |
+          yarn install --cache-folder ~/.cache/yarn --frozen-lockfile
+    - save_cache:
+        key: yarn-{{ checksum "yarn.lock" }}-v3
+        paths:
+          - ~/.cache/yarn
+    - run:
+        name: "Lint"
+        command: |
+          bundle exec niftany
+          yarn lint
+    - run:
+        name: "Test"
+        command: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+          yarn test
+          bundle exec rspec --format doc
+          ./cc-test-reporter format-coverage -t simplecov -o coverage/codeclimate.rails.json coverage/.resultset.json
+          ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.jest.json coverage/lcov.info
+          ./cc-test-reporter sum-coverage  coverage/codeclimate.*.json -p 2 
+          ./cc-test-reporter upload-coverage
+    - store_artifacts:
+        path: coverage
+
+workflows:
+  version: 2
+  myaccount:
+    jobs:
+      - release:
+          context:
+            - org-global
+          name: "release image"
+          filters:
+            tags:
+              only:
+                - /^v\d+.\d+.\d+.*/
+            branches:
+              ignore:
+                - /.*/
+      - test
+      - publish:
+          context:
+            - org-global
+      - deploy:
+          context:
+            - org-global
+          requires:
+            - publish
+          filters:
+            branches:
+              only:
+                - main
+                - /preview\/.*/

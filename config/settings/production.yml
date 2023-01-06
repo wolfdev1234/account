@@ -1,0 +1,3 @@
+datadog:
+  enabled: <%= ENV.fetch("DD_ENABELD", "true") %>
+  environment: <%= ENV.fetch("DD_ENV", "production") %>
